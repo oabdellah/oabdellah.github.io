@@ -33,6 +33,7 @@
 								<li><a href="index.html">Overview</a></li>
 								<li><a href="mechanical.html">Mechanical</a></li>
 								<li><a href="software.html">Software</a></li>
+								<li><a href="electrical.html">Electrical</a></li>
 								<li><a href="budget.html">Budget</a></li>
 							</ul>
 						</nav>
@@ -44,7 +45,7 @@
 						<div class="row gtr-200">
 								<article id="main">
 									<header>
-										<h2><a href="#">MECHANICAL SYSTEM</a></h2>
+										<h1><a href="#">MECHANICAL SYSTEM</a></h1>
 										<p>
 											For this project, the Mechanical Team focused on creating the housing for the bottles and dispensing mechanism.
 										</p>
@@ -78,17 +79,16 @@
 									</section>
 									<section>
 										<header>
-											<h3>Controlling the Pumps with Arduino</h3>
+											<h2>CAD Pieces</h2>
+											<h3>Peristaltic Pump Mounts</h3>
 										</header>
 										<p>
-											The Arduino directly controlled the four peristaltic pumps by sending low or high power to the respective PWM digital pin. 
-											The code split up the information received from the Serial port into a more manageable manner and made note of which 
-											information corresponded to the pump number and the amount to dispense. 
-										</p>
-										<p>
-											Inside of the Arduino code, there were calculations to determine the length of time to open the valve for. 
-											In prior tests, we measured the flow rate of the pumps and accounted for that in our calibration equation. 
-											Once the Arduino separated the data, it opens one pump after another. 
+											In order to hold the dispensing mechanism in place, we needed a way to secure the peristaltic pumps. 
+											The pump mounts are perfectly fitted and are screwed into place with the help of heat-set inserts. 
+											Thanks to the lightweight pumps only requiring a single screw to secure the mounts, these allowed for a modular design. 
+											It was very easy to move things around as necessary, and made mounting the four pumps very simple. 
+											There is also the ability to screw into three more surfaces of the pump for additional stability and movement control. 
+											The design of the mount also makes it much easier to disassemble in order to clean or change pumps. 
 										</p>
 										<!-- <a href="#" class="image featured"><img src="sf website images/arduino code.JPG" alt="" /></a> -->
 										<p><small>Snippet of Arduino code that reads the data from the Serial port and separates it into groups.</small></p>
